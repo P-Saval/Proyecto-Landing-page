@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:wght@300&display=swap");
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
-
-:root{
+:root {
     --bgcolor: rgb(235, 235, 235);
 }
 * {
     margin: 0;
     border: 0;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+        Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-body{
+body {
     height: 100svh;
     width: 100%;
 }
@@ -23,36 +23,34 @@ header {
     padding: 40px;
     background-color: var(--bgcolor);
     display: flex;
-    align-items: center;    
+    align-items: center;
 }
 
-img{
+img {
     height: 50px;
-    width: 60px;   
-}    
+    width: 60px;
+}
 
-header nav{
+header nav {
     flex-grow: 1;
     display: flex;
     justify-content: center;
 }
-.menu{
+.menu {
     width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     list-style: none;
-    
 }
-a{
+a {
     padding: 10px;
     color: black;
     font-size: small;
     text-decoration: none;
 }
 
-
-.button{
+.button {
     width: 60px;
     gap: 20px;
     display: flex;
@@ -60,32 +58,30 @@ a{
     align-items: center;
     margin-right: 20px;
     cursor: pointer;
-
 }
-.icon-person{
+.icon-person {
     content: url(./Assets/person_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png);
     height: 30px;
     width: 30px;
 }
-.icon-bag{
+.icon-bag {
     content: url(./Assets/shopping_bag_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png);
     height: 30px;
     width: 30px;
 }
-.menu-icon{
+.menu-icon {
     visibility: hidden;
 }
-.main-image{
+.main-image {
     width: 100%;
     position: relative;
-
 }
-.first-image img{
+.first-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-h1{
+h1 {
     color: white;
     position: absolute;
     top: 100px;
@@ -93,25 +89,23 @@ h1{
     font-weight: bold;
     font-stretch: extra-expanded;
 }
-h2{
+h2 {
     font-size: medium;
     color: white;
     position: absolute;
     top: 150px;
-    left: 80px;    
+    left: 80px;
     font-weight: lighter;
     font-stretch: extra-expanded;
 }
-.grid-container{
+.grid-container {
     width: 100%;
     height: 1200px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    
-    
 }
-.card{
+.card {
     position: relative;
     width: auto;
     margin: 30px;
@@ -122,7 +116,7 @@ h2{
     flex-direction: column;
     flex-wrap: wrap;
 }
-.card > img{
+.card > img {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -131,28 +125,26 @@ h2{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.card h3{
+.card h3 {
     font-size: 20px;
     font-weight: 400;
     position: relative;
-    
 }
-.card h4{
+.card h4 {
     font-size: 15px;
     font-weight: 200;
     padding-top: 10px;
     position: relative;
 }
-.card > div{
+.card > div {
     width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     position: absolute;
     bottom: 0;
     margin-bottom: 30px;
-    
 }
-.card > div > a{
+.card > div > a {
     border-radius: 40px;
     background-color: white;
     width: 120px;
@@ -162,86 +154,89 @@ h2{
     cursor: pointer;
     text-align: center;
 }
- 
-.color-buttons{
+
+.color-buttons {
     display: flex;
     justify-content: flex-end;
-    gap: 15px;   
-    
+    gap: 15px;
 }
-.button-1{
+.button-1 {
     height: 30px;
     width: 30px;
     border-radius: 50%;
     background-color: yellow;
     border: 2px white solid;
 }
-.button-2{
+.button-2 {
     height: 30px;
     width: 30px;
     border-radius: 50%;
     background-color: crimson;
     border: 2px white solid;
-}.button-3{
+}
+.button-3 {
     height: 30px;
     width: 30px;
     border-radius: 50%;
     background-color: black;
     border: 2px white solid;
 }
-.button-1:hover{
-    box-shadow: 0 0 0 2px black; 
+.button-1:hover {
+    box-shadow: 0 0 0 2px black;
     transition: 0.5s;
 }
-.button-2:hover{
-    box-shadow: 0 0 0 2px black; 
+.button-2:hover {
+    box-shadow: 0 0 0 2px black;
     transition: 0.5s;
-}.button-3:hover{
-    box-shadow: 0 0 0 2px black; 
+}
+.button-3:hover {
+    box-shadow: 0 0 0 2px black;
     transition: 0.5s;
 }
 
-h5{
+h5 {
     width: 60%;
-    padding:10px 40px;
+    padding: 10px 40px;
     font-size: 80px;
     font-weight: 300;
     font-stretch: expanded;
+    margin: auto;
+    text-align: center;
 }
-h6{
+h6 {
     width: 45%;
-    padding:10px 40px;
+    padding: 10px 40px;
     font-size: 30px;
     font-weight: lighter;
+    margin: auto;
+    text-align: center;
 }
-.second-image{
+.second-image {
     width: 100%;
     height: 800px;
     margin: 0;
-    position: relative;
+    background-image: url("https://group.mercedes-benz.com/bilder/unternehmen/standorte/daimler-in-nordamerika/ueberblick/buehnen/visual-mercedes-benz-nordamerika-w1680xh945-cutout.jpg");
+    background-size: contain;
+    display: flex;
+    align-items: center;
 }
-.second-image > img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-.dealer-partner{
-    position: absolute;
+
+.dealer-partner {
+    margin-left: 50px;
     height: 300px;
-    width: 500px;
-    top: 30%;
-    left: 80px;
+    width: 100%;
+    max-width: 500px;
     border-radius: 10px;
     background: rgba(254, 254, 254, 0.2);
 }
-.dealer-partner > p{
-    font-size: 50px;
+.dealer-partner > p {
+    font-size: 2em;
     font-weight: 300;
     color: white;
     padding: 30px;
     width: 400px;
 }
-.dealer-partner > a{
+.dealer-partner > a {
     margin-left: 30px;
     border-radius: 40px;
     background-color: white;
@@ -250,16 +245,15 @@ h6{
     font-size: 12.5px;
     text-align: center;
 }
-.flex-container{
+.flex-container {
     width: 100%;
     height: 500px;
     display: flex;
     justify-content: start;
     align-items: center;
     margin-top: 20px;
-    
 }
-.card-small{
+.card-small {
     height: 100%;
     width: 500px;
     display: flex;
@@ -271,12 +265,9 @@ h6{
     border-radius: 10px;
     align-items: flex-start;
     font-size: 30px;
-    
 }
 
-    
-
-.card-small > img{
+.card-small > img {
     width: 90%;
     height: 100%;
     object-fit: contain;
@@ -284,9 +275,8 @@ h6{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
 }
-.card-small > a{
+.card-small > a {
     position: absolute;
     bottom: 10%;
     border-radius: 40px;
@@ -297,45 +287,42 @@ h6{
     padding: 10px;
     cursor: pointer;
     text-align: center;
-
 }
 .third-image {
     width: 100%;
-    height: 800px;
-    margin-top: 30px;
-
-}
-.third-image > img{
     height: 100%;
-    width: 100%;
-    object-fit: fill;
-    position: absolute;
+    max-height: 400px;
+    margin-top: 30px;
+    background-image: url("https://www.mercedes-benz.es/content/dam/hq/passengercars/cars/s-class/mercedes-maybach-s-class-z223-pi/overview/exterior/10-2022/images/mercedes-maybach-s-class-z223-exterior-enginehood-2176x1224-10-2022.jpg/1728375131746.jpg?im=Resize=(1280);Crop,rect=(0,0,1280,720)");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
 }
-.third-image > p{
-    position: relative;
-    top: 52%;
-    left: 50px;
+
+.third-image > p {
     color: white;
     font-size: 45px;
     font-stretch: expanded;
+    margin-left: 20px;
 }
-#subtext{
-    position: relative;
-    top: 53%;
-    left: 50px;
-    color: white;
-    font-size: 10px;
-    width: 20%;
-    font-stretch: extra-expanded;
+
+#subtext {
+    margin-left: 20px;
+    font-size: 26px;
+    width: 100%;
+    max-width: 500px;
 }
-.fourth-image{
+
+.fourth-image {
     width: 100%;
     height: 800px;
     display: flex;
     align-items: center;
-    
 }
-.maybach-text{
+.maybach-text {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -343,17 +330,15 @@ h6{
     gap: 50px;
     font-size: 40px;
     font-stretch: expanded;
-    
 }
 
-
-#maybach-text{
+#maybach-text {
     font-size: 15px;
     width: 80%;
     font-weight: lighter;
     font-stretch: expanded;
 }
-.maybach-text > button{
+.maybach-text > button {
     width: fit-content;
     border-radius: 10px;
     background-color: var(--bgcolor);
@@ -362,12 +347,14 @@ h6{
     font-size: 18px;
     font-weight: 200;
 }
-.fourth-image > img{
-   width: 55%;
-   height: 85%;
-   padding: 30px;
+.fourth-image > img {
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+    padding: 30px;
+    aspect-ratio: 1 / 2;
 }
-.last-text{
+.last-text {
     width: 100%;
     height: 150px;
     display: flex;
@@ -375,13 +362,13 @@ h6{
     align-items: center;
     background-color: rgb(42, 42, 42);
 }
-.last-text > p{
+.last-text > p {
     color: white;
     font-weight: lighter;
     text-align: left;
     width: 40%;
 }
-.last-text > a{
+.last-text > a {
     border-radius: 20px;
     background-color: white;
     color: black;
@@ -389,7 +376,7 @@ h6{
     font-weight: 500;
 }
 
-footer{
+footer {
     width: 100%;
     height: 900px;
     display: grid;
@@ -397,7 +384,7 @@ footer{
     background-color: black;
     color: white;
 }
-.newsletter{
+.newsletter {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -405,83 +392,79 @@ footer{
     gap: 25px;
     margin-top: 40px;
 }
-.newsletter > p{
+.newsletter > p {
     font-size: 20px;
 }
-.newsletter > span{
+.newsletter > span {
     font-size: 15px;
     font-weight: 100;
 }
-.email-input{
-    width: 450px;
+.email-input {
+    max-width: 450px;
+    width: 100%;
     height: 50px;
     position: relative;
     border-radius: 40px;
     padding: 10px;
     border: 1px solid white;
-
+    display: flex;
 }
-.email-input > input{
-    width: 350px;
+.email-input > input {
+    max-width: 350px;
+    width: 100%;
     height: 30px;
     background: black;
     color: white;
     font-size: 15px;
     font-weight: 100;
     text-align: center;
-    
 }
 
-.email-input > button{
+.email-input > button {
     width: 110px;
-    height: 50px;
+    height: 100%;
     border-radius: 40px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     background: white;
     color: black;
-    cursor: pointer;  
+    cursor: pointer;
 }
-.checkbox{
+.checkbox {
     display: flex;
     gap: 10px;
 }
 
-.checkbox > label{
+.checkbox > label {
     font-weight: 100;
     font-size: 15px;
 }
-.checkbox > label > span{
+.checkbox > label > span {
     text-decoration: underline;
 }
-.social-icons{
+.social-icons {
     display: flex;
     gap: 5px;
 }
 
-.fa {  
+.fa {
     font-size: 20px;
     color: white;
 }
 
-.links{
+.links {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     margin-top: 10px;
-   
 }
-section{
+section {
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: 15px;
     font-size: 20px;
     font-stretch: expanded;
-    
 }
-section ul{
+section ul {
     list-style: none;
     padding: 0;
     font-size: 15px;
@@ -490,61 +473,82 @@ section ul{
     gap: 5px;
 }
 
+@media screen and (max-width: 1200px) {
+    .fourth-image {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .maybach-text {
+        width: 100%;
+        height: 50%;
+    }
+
+    .fourth-image > img {
+        height: 50%;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .card-small {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 580px) {
-    header{
+    header {
         justify-content: space-around;
     }
-    header nav{
+    header nav {
         display: none;
         width: 10px;
     }
-    h1{
+    h1 {
         position: absolute;
         top: 130px;
         left: 8px;
         font-size: medium;
         font-weight: bold;
     }
-    h2{
+    h2 {
         position: absolute;
         top: 150px;
-        left: 8px;    
+        left: 8px;
         font-size: 10px;
         font-weight: lighter;
     }
-    .menu-icon{
+    .menu-icon {
         visibility: visible;
         width: 30px;
-        height: 30px;    
-        margin-left: 20px;   
+        height: 30px;
+        margin-left: 20px;
     }
-    .grid-container{
+    .grid-container {
         grid-template-columns: 1fr;
         height: 1600px;
     }
-    .card{
-        height:400px;
+    .card {
+        height: 400px;
         margin: 5px;
         align-items: center;
-        
     }
     .card > div {
         display: flex;
         justify-content: center;
-       
     }
-    .card > div > div{
+    .card > div > div {
         display: none;
     }
-    h5{
+    h5 {
         font-size: 40px;
         margin-top: 20px;
         padding: 20px 10px;
         width: 100%;
     }
-    h6{
+    h6 {
         width: 100%;
         font-size: 30px;
     }
-    
 }
