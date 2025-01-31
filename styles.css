@@ -72,15 +72,17 @@ a{
     height: 30px;
     width: 30px;
 }
+.menu-icon{
+    visibility: hidden;
+}
 .main-image{
     width: 100%;
     position: relative;
-    
 
 }
 .first-image img{
     width: 100%;
-    height: 600px;
+    height: 100%;
     object-fit: cover;
 }
 h1{
@@ -111,10 +113,14 @@ h2{
 }
 .card{
     position: relative;
+    width: auto;
     margin: 30px;
     padding: 40px;
     border-radius: 10px;
     background-color: var(--bgcolor);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 .card > img{
     width: 100%;
@@ -197,7 +203,7 @@ h2{
 
 h5{
     width: 60%;
-    padding:20px 40px;
+    padding:10px 40px;
     font-size: 80px;
     font-weight: 300;
     font-stretch: expanded;
@@ -340,6 +346,7 @@ h6{
     
 }
 
+
 #maybach-text{
     font-size: 15px;
     width: 80%;
@@ -463,6 +470,7 @@ footer{
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     margin-top: 10px;
+   
 }
 section{
     display: flex;
@@ -471,6 +479,7 @@ section{
     gap: 15px;
     font-size: 20px;
     font-stretch: expanded;
+    
 }
 section ul{
     list-style: none;
@@ -481,3 +490,61 @@ section ul{
     gap: 5px;
 }
 
+@media screen and (max-width: 580px) {
+    header{
+        justify-content: space-around;
+    }
+    header nav{
+        display: none;
+        width: 10px;
+    }
+    h1{
+        position: absolute;
+        top: 130px;
+        left: 8px;
+        font-size: medium;
+        font-weight: bold;
+    }
+    h2{
+        position: absolute;
+        top: 150px;
+        left: 8px;    
+        font-size: 10px;
+        font-weight: lighter;
+    }
+    .menu-icon{
+        visibility: visible;
+        width: 30px;
+        height: 30px;    
+        margin-left: 20px;   
+    }
+    .grid-container{
+        grid-template-columns: 1fr;
+        height: 1600px;
+    }
+    .card{
+        height:400px;
+        margin: 5px;
+        align-items: center;
+        
+    }
+    .card > div {
+        display: flex;
+        justify-content: center;
+       
+    }
+    .card > div > div{
+        display: none;
+    }
+    h5{
+        font-size: 40px;
+        margin-top: 20px;
+        padding: 20px 10px;
+        width: 100%;
+    }
+    h6{
+        width: 100%;
+        font-size: 30px;
+    }
+    
+}
