@@ -200,23 +200,22 @@ h5 {
     font-size: 80px;
     font-weight: 300;
     font-stretch: expanded;
-    margin: auto;
-    text-align: center;
+    
 }
 h6 {
     width: 45%;
     padding: 10px 40px;
     font-size: 30px;
     font-weight: lighter;
-    margin: auto;
-    text-align: center;
+   
 }
 .second-image {
     width: 100%;
-    height: 800px;
+    height: 100%;
     margin: 0;
     background-image: url("https://group.mercedes-benz.com/bilder/unternehmen/standorte/daimler-in-nordamerika/ueberblick/buehnen/visual-mercedes-benz-nordamerika-w1680xh945-cutout.jpg");
     background-size: contain;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
 }
@@ -225,7 +224,7 @@ h6 {
     margin-left: 50px;
     height: 300px;
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     border-radius: 10px;
     background: rgba(254, 254, 254, 0.2);
 }
@@ -252,10 +251,12 @@ h6 {
     justify-content: start;
     align-items: center;
     margin-top: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 .card-small {
     height: 100%;
-    width: 500px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     background-color: var(--bgcolor);
@@ -291,10 +292,10 @@ h6 {
 .third-image {
     width: 100%;
     height: 100%;
-    max-height: 400px;
+    max-height: 700px;
     margin-top: 30px;
     background-image: url("https://www.mercedes-benz.es/content/dam/hq/passengercars/cars/s-class/mercedes-maybach-s-class-z223-pi/overview/exterior/10-2022/images/mercedes-maybach-s-class-z223-exterior-enginehood-2176x1224-10-2022.jpg/1728375131746.jpg?im=Resize=(1280);Crop,rect=(0,0,1280,720)");
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -304,21 +305,21 @@ h6 {
 
 .third-image > p {
     color: white;
-    font-size: 45px;
+    font-size: 3em;
     font-stretch: expanded;
     margin-left: 20px;
 }
 
 #subtext {
     margin-left: 20px;
-    font-size: 26px;
+    font-size: 0.9em;
     width: 100%;
     max-width: 500px;
 }
 
 .fourth-image {
     width: 100%;
-    height: 800px;
+    max-height: 600px;
     display: flex;
     align-items: center;
 }
@@ -351,8 +352,9 @@ h6 {
     height: 100%;
     object-fit: contain;
     width: 100%;
+    max-width: 50%;
     padding: 30px;
-    aspect-ratio: 1 / 2;
+   
 }
 .last-text {
     width: 100%;
@@ -422,7 +424,7 @@ footer {
 
 .email-input > button {
     width: 110px;
-    height: 100%;
+
     border-radius: 40px;
     background: white;
     color: black;
@@ -478,20 +480,10 @@ section ul {
         flex-direction: column;
         height: 100%;
     }
-
     .maybach-text {
         width: 100%;
         height: 50%;
     }
-
-    .fourth-image > img {
-        height: 50%;
-    }
-
-    .flex-container {
-        flex-direction: column;
-    }
-
     .card-small {
         width: 100%;
     }
@@ -504,6 +496,12 @@ section ul {
     header nav {
         display: none;
         width: 10px;
+    }
+    .menu-icon {
+        visibility: visible;
+        width: 30px;
+        height: 30px;
+        margin-left: 20px;
     }
     h1 {
         position: absolute;
@@ -518,12 +516,6 @@ section ul {
         left: 8px;
         font-size: 10px;
         font-weight: lighter;
-    }
-    .menu-icon {
-        visibility: visible;
-        width: 30px;
-        height: 30px;
-        margin-left: 20px;
     }
     .grid-container {
         grid-template-columns: 1fr;
@@ -544,11 +536,52 @@ section ul {
     h5 {
         font-size: 40px;
         margin-top: 20px;
-        padding: 20px 10px;
+        padding: 20px 40px;
         width: 100%;
     }
     h6 {
         width: 100%;
         font-size: 30px;
+    }
+    .second-image{
+        height: 300px;
+        background-size:contain;
+        background-position: center;
+    }
+    .dealer-partner{
+        height: 200px;
+        max-width: 350px;
+    }
+    .third-image{
+        background-size: contain;
+        max-height: 300px;
+        margin-bottom: -10px;
+    }
+    .third-image > p{
+        font-size: 1em;
+    }
+    #subtext{
+        font-size: 0.5em;
+        width: 50%;
+    }
+    .fourth-image{
+        max-height: 400px;
+        flex-direction: column-reverse;
+    }
+    .maybach-text{
+        padding: 20px 50px;
+        font-size: large;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    #maybach-text{
+        font-size: small;
+    }
+    .maybach-text > button{
+        font-size: small;
+    }
+    .fourth-image > img{
+        height: 100%;
     }
 }
